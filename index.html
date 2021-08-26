@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script src="app.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<center>
+		<div id="message-box">
+			<p onclick="unwatchable('message-box');" onmousemove="run();" id="close" onmouseout="runOut();">X</p>
+			<p id="my-message">Hello World!</p>
+		</div>
+		<form action="math.php" method="GET">
+			<p><input type="text" name="expr" id="textbox" readonly required></p>
+			<input type="submit" id="equal-btn" style="background-color: cornflowerblue;" value="=">
+		</form>
+		<div id="num-1-3">
+			<button onclick="add_num('1','textbox');" id="one-btn" class="num-btn">1</button>
+			<button onclick="add_num('2','textbox');" id="two-btn" class="num-btn">2</button>
+			<button onclick="add_num('3','textbox');" id="three-btn" class="num-btn">3</button>
+		</div>
+		<div id="num-4-6">
+			<button onclick="add_num('4','textbox');" id="four-btn" class="num-btn">4</button>
+			<button onclick="add_num('5','textbox');" id="five-btn" class="num-btn">5</button>
+			<button onclick="add_num('6','textbox');" id="six-btn" class="num-btn">6</button>
+		</div>
+		<div id="num-7-9">
+			<button onclick="add_num('7','textbox');" id="seven-btn" class="num-btn">7</button>
+			<button onclick="add_num('8','textbox');" id="eight-btn" class="num-btn">8</button>
+			<button onclick="add_num('9','textbox');" id="nine-btn" class="num-btn">9</button>
+		</div>
+		<div id="num-0-c">
+			<button onclick="clearScreen('textbox');" id="c-btn">C</button>
+			<button onclick="add_num('0','textbox');" id="zero-btn" class="num-btn">0</button>
+			<button onclick="backSpace('textbox');" id="backspace-btn">&larr;</button>
+		</div>
+		<div>
+			<button onclick="add_operator('+','textbox');" id="add-btn">+</button>
+			<button onclick="add_operator('-','textbox');" id="sub-btn">-</button>
+			<button onclick="add_operator('x','textbox');" id="mul-btn">&times;</button>
+		</div>
+	</center>
+</html>

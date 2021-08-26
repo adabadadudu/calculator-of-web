@@ -1,0 +1,58 @@
+* {
+	font-size: 25px;
+}
+
+.num-btn {
+	width: 5%;
+	border-radius: 50%;
+	background-color: coral;
+}
+
+#c-btn {
+	width: 5%;
+	border-radius: 50%;
+	background-color: darkgoldenrod;
+}
+
+
+#backspace-btn {
+	width: 5%;
+	border-radius: 50%;
+	background-color: darkgoldenrod;
+}
+
+
+
+#add-btn {
+	width: 5%;
+	border-radius: 1%;
+	background-color: aqua;
+}
+
+#sub-btn {
+	width: 5%;
+	border-radius: 1%;
+	background-color: skyblue;
+}
+
+#mul-btn {
+	width: 5%;
+	border-radius: 1%;
+	background-color: cornflowerblue;
+}
+
+#equal-btn {
+	width: 5%;
+	border-radius: 30%;
+	background-color: fuchsia;
+}
+
+#message-box {
+	display: none;
+	background-color: tomato;
+	width: 25%;
+}
+
+#my-message {
+	color: black;
+}
